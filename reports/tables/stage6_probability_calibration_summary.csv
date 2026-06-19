@@ -1,0 +1,4 @@
+model,raw_brier_score,best_brier_method,best_brier_score,brier_improvement_vs_raw,raw_ece,best_ece_method,best_ece,ece_improvement_vs_raw,best_decision_f1_method,best_decision_f1,best_decision_threshold
+stage5_lightgbm_raw_gpu,0.06784838106804944,raw,0.06784838106804944,0.0,0.0015680232797212342,raw,0.0015680232797212342,0.0,sigmoid,0.3070402637155639,0.14
+stage5_lightgbm_smote_gpu,0.06781641017616567,raw,0.06781641017616567,0.0,0.0029935805687490175,raw,0.0029935805687490175,0.0,isotonic,0.30453514739229026,0.16
+stage5_xgboost_raw_cuda,0.06768592427957801,raw,0.06768592427957801,0.0,0.001033188629770509,raw,0.001033188629770509,0.0,raw,0.3145145908830822,0.15

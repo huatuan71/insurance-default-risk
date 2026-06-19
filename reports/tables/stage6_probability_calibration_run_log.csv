@@ -1,0 +1,10 @@
+model,model_family,strategy,role,calibration_method,calibration_fit_split,test_usage,valid_rows,test_rows,valid_positive_count,test_positive_count,status
+stage5_lightgbm_smote_gpu,lightgbm,smote,stage6_5_1_and_10_1_recommended,raw,valid,final_evaluation_only,46127,46127,3724,3724,success
+stage5_lightgbm_smote_gpu,lightgbm,smote,stage6_5_1_and_10_1_recommended,sigmoid,valid,final_evaluation_only,46127,46127,3724,3724,success
+stage5_lightgbm_smote_gpu,lightgbm,smote,stage6_5_1_and_10_1_recommended,isotonic,valid,final_evaluation_only,46127,46127,3724,3724,success
+stage5_lightgbm_raw_gpu,lightgbm,raw,stage6_20_1_recommended,raw,valid,final_evaluation_only,46127,46127,3724,3724,success
+stage5_lightgbm_raw_gpu,lightgbm,raw,stage6_20_1_recommended,sigmoid,valid,final_evaluation_only,46127,46127,3724,3724,success
+stage5_lightgbm_raw_gpu,lightgbm,raw,stage6_20_1_recommended,isotonic,valid,final_evaluation_only,46127,46127,3724,3724,success
+stage5_xgboost_raw_cuda,xgboost,raw,stage5_strong_ranking_baseline,raw,valid,final_evaluation_only,46127,46127,3724,3724,success
+stage5_xgboost_raw_cuda,xgboost,raw,stage5_strong_ranking_baseline,sigmoid,valid,final_evaluation_only,46127,46127,3724,3724,success
+stage5_xgboost_raw_cuda,xgboost,raw,stage5_strong_ranking_baseline,isotonic,valid,final_evaluation_only,46127,46127,3724,3724,success
