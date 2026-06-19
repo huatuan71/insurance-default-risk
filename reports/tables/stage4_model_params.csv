@@ -1,0 +1,4 @@
+model,requested_device,actual_device,random_state,uses_class_weight,uses_scale_pos_weight,uses_sampling,params_json
+stage4_logistic_regression,cpu,cpu,42,False,False,False,"{""C"": 1.0, ""class_weight"": null, ""max_iter"": 500, ""n_jobs"": -1, ""penalty"": ""l2"", ""random_state"": 42, ""solver"": ""saga""}"
+stage4_xgboost_cuda,cuda,cuda,42,False,False,False,"{""colsample_bytree"": 0.85, ""device"": ""cuda"", ""eval_metric"": ""logloss"", ""learning_rate"": 0.04, ""max_depth"": 5, ""n_estimators"": 350, ""n_jobs"": 1, ""random_state"": 42, ""subsample"": 0.85, ""tree_method"": ""hist""}"
+stage4_lightgbm_gpu,gpu,gpu,42,False,False,False,"{""colsample_bytree"": 0.85, ""device_type"": ""gpu"", ""gpu_device_id"": 0, ""gpu_platform_id"": 0, ""learning_rate"": 0.04, ""n_estimators"": 400, ""n_jobs"": -1, ""num_leaves"": 48, ""random_state"": 42, ""subsample"": 0.85, ""verbosity"": -1}"

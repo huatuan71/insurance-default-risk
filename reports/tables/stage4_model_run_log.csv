@@ -1,0 +1,4 @@
+model,requested_device,actual_device,status,fallback_from,fallback_reason
+stage4_logistic_regression,cpu,cpu,success,,
+stage4_xgboost_cuda,cuda,cuda,success,,
+stage4_lightgbm_gpu,gpu,gpu,success,,
