@@ -1,0 +1,2 @@
+model,requested_device,actual_device,status,best_epoch,best_valid_pr_auc,epochs_trained,early_stopped,train_seconds,batch_size,max_epochs,patience,selected_threshold,train_rows,positive_count,negative_count,pos_weight
+stage8_pytorch_mlp_embedding,cuda_if_available,cpu,success,8,0.24106769402917658,11,True,93.86899209999956,4096,20,3,0.72,215257,17377,197880,11.38746619094205

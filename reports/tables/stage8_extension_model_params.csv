@@ -1,0 +1,2 @@
+model,numeric_feature_count,categorical_feature_count,hidden_layers,dropout,learning_rate,weight_decay,embedding_cardinalities,embedding_dims,scaler_fit_split,category_mapping_fit_split,threshold_selection_split
+stage8_pytorch_mlp_embedding,126,16,"[256, 128, 64]",0.25,0.001,0.0001,"[3, 4, 3, 3, 9, 6, 6, 7, 7, 20, 8, 50, 6, 5, 9, 4]","[4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 7, 4, 4, 4, 4]",train,train,valid
