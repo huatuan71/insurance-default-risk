@@ -1,0 +1,17 @@
+column,strategy,handle_unknown,min_frequency,fit_split,raw_train_unique_count,encoder_category_count,encoded_feature_count,top_train_categories,notes
+NAME_CONTRACT_TYPE,OneHotEncoder,ignore,50,train,2,2,2,Cash loans; Revolving loans,Encoder is fitted on train split only; sparse matrix is not materialized as CSV.
+CODE_GENDER,OneHotEncoder,ignore,50,train,3,3,3,F; M; __MISSING__,Encoder is fitted on train split only; sparse matrix is not materialized as CSV.
+FLAG_OWN_CAR,OneHotEncoder,ignore,50,train,2,2,2,N; Y,Encoder is fitted on train split only; sparse matrix is not materialized as CSV.
+FLAG_OWN_REALTY,OneHotEncoder,ignore,50,train,2,2,2,Y; N,Encoder is fitted on train split only; sparse matrix is not materialized as CSV.
+NAME_TYPE_SUITE,OneHotEncoder,ignore,50,train,8,8,8,"Unaccompanied; Family; Spouse, partner; Children; Other_B; __MISSING__; Other_A; __RARE__",Encoder is fitted on train split only; sparse matrix is not materialized as CSV.
+NAME_INCOME_TYPE,OneHotEncoder,ignore,50,train,5,5,5,Working; Commercial associate; Pensioner; State servant; __RARE__,Encoder is fitted on train split only; sparse matrix is not materialized as CSV.
+NAME_EDUCATION_TYPE,OneHotEncoder,ignore,50,train,5,5,5,Secondary / secondary special; Higher education; Incomplete higher; Lower secondary; __RARE__,Encoder is fitted on train split only; sparse matrix is not materialized as CSV.
+NAME_FAMILY_STATUS,OneHotEncoder,ignore,50,train,6,6,6,Married; Single / not married; Civil marriage; Separated; Widow; __RARE__,Encoder is fitted on train split only; sparse matrix is not materialized as CSV.
+NAME_HOUSING_TYPE,OneHotEncoder,ignore,50,train,6,6,6,House / apartment; With parents; Municipal apartment; Rented apartment; Office apartment; Co-op apartment,Encoder is fitted on train split only; sparse matrix is not materialized as CSV.
+OCCUPATION_TYPE,OneHotEncoder,ignore,50,train,19,19,19,__MISSING__; Laborers; Sales staff; Core staff; Managers; Drivers; High skill tech staff; Accountants; Medicine staff; Security staff,Encoder is fitted on train split only; sparse matrix is not materialized as CSV.
+WEEKDAY_APPR_PROCESS_START,OneHotEncoder,ignore,50,train,7,7,7,TUESDAY; WEDNESDAY; THURSDAY; MONDAY; FRIDAY; SATURDAY; SUNDAY,Encoder is fitted on train split only; sparse matrix is not materialized as CSV.
+ORGANIZATION_TYPE,OneHotEncoder,ignore,50,train,49,49,49,Business Entity Type 3; XNA; Self-employed; Other; Medicine; Business Entity Type 2; Government; School; Trade: type 7; Kindergarten,Encoder is fitted on train split only; sparse matrix is not materialized as CSV.
+FONDKAPREMONT_MODE,OneHotEncoder,ignore,50,train,5,5,5,__MISSING__; reg oper account; reg oper spec account; org spec account; not specified,Encoder is fitted on train split only; sparse matrix is not materialized as CSV.
+HOUSETYPE_MODE,OneHotEncoder,ignore,50,train,4,4,4,__MISSING__; block of flats; specific housing; terraced house,Encoder is fitted on train split only; sparse matrix is not materialized as CSV.
+WALLSMATERIAL_MODE,OneHotEncoder,ignore,50,train,8,8,8,"__MISSING__; Panel; Stone, brick; Block; Wooden; Mixed; Monolithic; Others",Encoder is fitted on train split only; sparse matrix is not materialized as CSV.
+EMERGENCYSTATE_MODE,OneHotEncoder,ignore,50,train,3,3,3,No; __MISSING__; Yes,Encoder is fitted on train split only; sparse matrix is not materialized as CSV.

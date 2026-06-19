@@ -1,0 +1,147 @@
+column,role,dtype,train_missing_count,full_missing_count,train_unique_count,selected_for_feature_matrix,action,reason
+SK_ID_CURR,id,int64,0,0,215257,False,exclude,Identifier; use only for tracing and joins.
+TARGET,target,int64,0,0,2,False,exclude,Label column; use only as y.
+NAME_CONTRACT_TYPE,categorical_feature,str,0,0,2,True,encode_later,Use OneHotEncoder fitted on train split.
+CODE_GENDER,categorical_feature,str,0,0,3,True,encode_later,Use OneHotEncoder fitted on train split.
+FLAG_OWN_CAR,categorical_feature,str,0,0,2,True,encode_later,Use OneHotEncoder fitted on train split.
+FLAG_OWN_REALTY,categorical_feature,str,0,0,2,True,encode_later,Use OneHotEncoder fitted on train split.
+CNT_CHILDREN,numeric_feature,int64,0,0,14,True,keep,Candidate feature after leakage and stability review.
+AMT_INCOME_TOTAL,numeric_feature,float64,0,0,1969,True,keep,Candidate feature after leakage and stability review.
+AMT_CREDIT,numeric_feature,float64,0,0,5092,True,keep,Candidate feature after leakage and stability review.
+AMT_ANNUITY,numeric_feature,float64,0,0,12836,True,keep,Candidate feature after leakage and stability review.
+AMT_GOODS_PRICE,numeric_feature,float64,0,0,834,True,keep,Candidate feature after leakage and stability review.
+NAME_TYPE_SUITE,categorical_feature,str,0,0,8,True,encode_later,Use OneHotEncoder fitted on train split.
+NAME_INCOME_TYPE,categorical_feature,str,0,0,5,True,encode_later,Use OneHotEncoder fitted on train split.
+NAME_EDUCATION_TYPE,categorical_feature,str,0,0,5,True,encode_later,Use OneHotEncoder fitted on train split.
+NAME_FAMILY_STATUS,categorical_feature,str,0,0,6,True,encode_later,Use OneHotEncoder fitted on train split.
+NAME_HOUSING_TYPE,categorical_feature,str,0,0,6,True,encode_later,Use OneHotEncoder fitted on train split.
+REGION_POPULATION_RELATIVE,numeric_feature,float64,0,0,81,True,keep,Candidate feature after leakage and stability review.
+DAYS_BIRTH,numeric_feature,int64,0,0,17379,True,keep,Candidate feature after leakage and stability review.
+DAYS_EMPLOYED,numeric_feature,float64,0,0,11815,True,keep,Candidate feature after leakage and stability review.
+DAYS_REGISTRATION,numeric_feature,float64,0,0,15230,True,keep,Candidate feature after leakage and stability review.
+DAYS_ID_PUBLISH,numeric_feature,int64,0,0,6125,True,keep,Candidate feature after leakage and stability review.
+OWN_CAR_AGE,numeric_feature,float64,0,0,58,True,keep,Candidate feature after leakage and stability review.
+FLAG_MOBIL,numeric_feature,int64,0,0,2,True,keep,Candidate feature after leakage and stability review.
+FLAG_EMP_PHONE,numeric_feature,int64,0,0,2,True,keep,Candidate feature after leakage and stability review.
+FLAG_WORK_PHONE,numeric_feature,int64,0,0,2,True,keep,Candidate feature after leakage and stability review.
+FLAG_CONT_MOBILE,numeric_feature,int64,0,0,2,True,keep,Candidate feature after leakage and stability review.
+FLAG_PHONE,numeric_feature,int64,0,0,2,True,keep,Candidate feature after leakage and stability review.
+FLAG_EMAIL,numeric_feature,int64,0,0,2,True,keep,Candidate feature after leakage and stability review.
+OCCUPATION_TYPE,categorical_feature,str,0,0,19,True,encode_later,Use OneHotEncoder fitted on train split.
+CNT_FAM_MEMBERS,numeric_feature,float64,0,0,15,True,keep,Candidate feature after leakage and stability review.
+REGION_RATING_CLIENT,numeric_feature,int64,0,0,3,True,keep,Candidate feature after leakage and stability review.
+REGION_RATING_CLIENT_W_CITY,numeric_feature,int64,0,0,3,True,keep,Candidate feature after leakage and stability review.
+WEEKDAY_APPR_PROCESS_START,categorical_feature,str,0,0,7,True,encode_later,Use OneHotEncoder fitted on train split.
+HOUR_APPR_PROCESS_START,numeric_feature,int64,0,0,24,True,keep,Candidate feature after leakage and stability review.
+REG_REGION_NOT_LIVE_REGION,numeric_feature,int64,0,0,2,True,keep,Candidate feature after leakage and stability review.
+REG_REGION_NOT_WORK_REGION,numeric_feature,int64,0,0,2,True,keep,Candidate feature after leakage and stability review.
+LIVE_REGION_NOT_WORK_REGION,numeric_feature,int64,0,0,2,True,keep,Candidate feature after leakage and stability review.
+REG_CITY_NOT_LIVE_CITY,numeric_feature,int64,0,0,2,True,keep,Candidate feature after leakage and stability review.
+REG_CITY_NOT_WORK_CITY,numeric_feature,int64,0,0,2,True,keep,Candidate feature after leakage and stability review.
+LIVE_CITY_NOT_WORK_CITY,numeric_feature,int64,0,0,2,True,keep,Candidate feature after leakage and stability review.
+ORGANIZATION_TYPE,categorical_feature,str,0,0,49,True,encode_later,Use OneHotEncoder fitted on train split.
+EXT_SOURCE_1,numeric_feature,float64,0,0,84234,True,keep,Candidate feature after leakage and stability review.
+EXT_SOURCE_2,numeric_feature,float64,0,0,102429,True,keep,Candidate feature after leakage and stability review.
+EXT_SOURCE_3,numeric_feature,float64,0,0,807,True,keep,Candidate feature after leakage and stability review.
+APARTMENTS_AVG,numeric_feature,float64,0,0,2210,True,keep,Candidate feature after leakage and stability review.
+BASEMENTAREA_AVG,numeric_feature,float64,0,0,3627,True,keep,Candidate feature after leakage and stability review.
+YEARS_BEGINEXPLUATATION_AVG,numeric_feature,float64,0,0,260,True,keep,Candidate feature after leakage and stability review.
+YEARS_BUILD_AVG,numeric_feature,float64,0,0,148,True,keep,Candidate feature after leakage and stability review.
+COMMONAREA_AVG,numeric_feature,float64,0,0,2948,True,keep,Candidate feature after leakage and stability review.
+ELEVATORS_AVG,numeric_feature,float64,0,0,241,True,keep,Candidate feature after leakage and stability review.
+ENTRANCES_AVG,numeric_feature,float64,0,0,272,True,keep,Candidate feature after leakage and stability review.
+FLOORSMAX_AVG,numeric_feature,float64,0,0,364,True,keep,Candidate feature after leakage and stability review.
+FLOORSMIN_AVG,numeric_feature,float64,0,0,280,True,keep,Candidate feature after leakage and stability review.
+LANDAREA_AVG,numeric_feature,float64,0,0,3333,True,keep,Candidate feature after leakage and stability review.
+LIVINGAPARTMENTS_AVG,numeric_feature,float64,0,0,1761,True,keep,Candidate feature after leakage and stability review.
+LIVINGAREA_AVG,numeric_feature,float64,0,0,4988,True,keep,Candidate feature after leakage and stability review.
+NONLIVINGAPARTMENTS_AVG,numeric_feature,float64,0,0,349,True,keep,Candidate feature after leakage and stability review.
+NONLIVINGAREA_AVG,numeric_feature,float64,0,0,3041,True,keep,Candidate feature after leakage and stability review.
+APARTMENTS_MODE,numeric_feature,float64,0,0,741,True,keep,Candidate feature after leakage and stability review.
+BASEMENTAREA_MODE,numeric_feature,float64,0,0,3687,True,keep,Candidate feature after leakage and stability review.
+YEARS_BEGINEXPLUATATION_MODE,numeric_feature,float64,0,0,210,True,keep,Candidate feature after leakage and stability review.
+YEARS_BUILD_MODE,numeric_feature,float64,0,0,151,True,keep,Candidate feature after leakage and stability review.
+COMMONAREA_MODE,numeric_feature,float64,0,0,2907,True,keep,Candidate feature after leakage and stability review.
+ELEVATORS_MODE,numeric_feature,float64,0,0,26,True,keep,Candidate feature after leakage and stability review.
+ENTRANCES_MODE,numeric_feature,float64,0,0,30,True,keep,Candidate feature after leakage and stability review.
+FLOORSMAX_MODE,numeric_feature,float64,0,0,25,True,keep,Candidate feature after leakage and stability review.
+FLOORSMIN_MODE,numeric_feature,float64,0,0,25,True,keep,Candidate feature after leakage and stability review.
+LANDAREA_MODE,numeric_feature,float64,0,0,3378,True,keep,Candidate feature after leakage and stability review.
+LIVINGAPARTMENTS_MODE,numeric_feature,float64,0,0,717,True,keep,Candidate feature after leakage and stability review.
+LIVINGAREA_MODE,numeric_feature,float64,0,0,5068,True,keep,Candidate feature after leakage and stability review.
+NONLIVINGAPARTMENTS_MODE,numeric_feature,float64,0,0,154,True,keep,Candidate feature after leakage and stability review.
+NONLIVINGAREA_MODE,numeric_feature,float64,0,0,3076,True,keep,Candidate feature after leakage and stability review.
+APARTMENTS_MEDI,numeric_feature,float64,0,0,1115,True,keep,Candidate feature after leakage and stability review.
+BASEMENTAREA_MEDI,numeric_feature,float64,0,0,3619,True,keep,Candidate feature after leakage and stability review.
+YEARS_BEGINEXPLUATATION_MEDI,numeric_feature,float64,0,0,231,True,keep,Candidate feature after leakage and stability review.
+YEARS_BUILD_MEDI,numeric_feature,float64,0,0,148,True,keep,Candidate feature after leakage and stability review.
+COMMONAREA_MEDI,numeric_feature,float64,0,0,2975,True,keep,Candidate feature after leakage and stability review.
+ELEVATORS_MEDI,numeric_feature,float64,0,0,46,True,keep,Candidate feature after leakage and stability review.
+ENTRANCES_MEDI,numeric_feature,float64,0,0,45,True,keep,Candidate feature after leakage and stability review.
+FLOORSMAX_MEDI,numeric_feature,float64,0,0,48,True,keep,Candidate feature after leakage and stability review.
+FLOORSMIN_MEDI,numeric_feature,float64,0,0,47,True,keep,Candidate feature after leakage and stability review.
+LANDAREA_MEDI,numeric_feature,float64,0,0,3376,True,keep,Candidate feature after leakage and stability review.
+LIVINGAPARTMENTS_MEDI,numeric_feature,float64,0,0,1068,True,keep,Candidate feature after leakage and stability review.
+LIVINGAREA_MEDI,numeric_feature,float64,0,0,5062,True,keep,Candidate feature after leakage and stability review.
+NONLIVINGAPARTMENTS_MEDI,numeric_feature,float64,0,0,196,True,keep,Candidate feature after leakage and stability review.
+NONLIVINGAREA_MEDI,numeric_feature,float64,0,0,3071,True,keep,Candidate feature after leakage and stability review.
+FONDKAPREMONT_MODE,categorical_feature,str,0,0,5,True,encode_later,Use OneHotEncoder fitted on train split.
+HOUSETYPE_MODE,categorical_feature,str,0,0,4,True,encode_later,Use OneHotEncoder fitted on train split.
+TOTALAREA_MODE,numeric_feature,float64,0,0,4910,True,keep,Candidate feature after leakage and stability review.
+WALLSMATERIAL_MODE,categorical_feature,str,0,0,8,True,encode_later,Use OneHotEncoder fitted on train split.
+EMERGENCYSTATE_MODE,categorical_feature,str,0,0,3,True,encode_later,Use OneHotEncoder fitted on train split.
+OBS_30_CNT_SOCIAL_CIRCLE,numeric_feature,float64,0,0,33,True,keep,Candidate feature after leakage and stability review.
+DEF_30_CNT_SOCIAL_CIRCLE,numeric_feature,float64,0,0,8,True,keep,Candidate feature after leakage and stability review.
+OBS_60_CNT_SOCIAL_CIRCLE,numeric_feature,float64,0,0,32,True,keep,Candidate feature after leakage and stability review.
+DEF_60_CNT_SOCIAL_CIRCLE,numeric_feature,float64,0,0,8,True,keep,Candidate feature after leakage and stability review.
+DAYS_LAST_PHONE_CHANGE,numeric_feature,float64,0,0,3702,True,keep,Candidate feature after leakage and stability review.
+FLAG_DOCUMENT_2,numeric_feature,int64,0,0,2,True,keep,Candidate feature after leakage and stability review.
+FLAG_DOCUMENT_3,numeric_feature,int64,0,0,2,True,keep,Candidate feature after leakage and stability review.
+FLAG_DOCUMENT_4,numeric_feature,int64,0,0,2,True,keep,Candidate feature after leakage and stability review.
+FLAG_DOCUMENT_5,numeric_feature,int64,0,0,2,True,keep,Candidate feature after leakage and stability review.
+FLAG_DOCUMENT_6,numeric_feature,int64,0,0,2,True,keep,Candidate feature after leakage and stability review.
+FLAG_DOCUMENT_7,numeric_feature,int64,0,0,2,True,keep,Candidate feature after leakage and stability review.
+FLAG_DOCUMENT_8,numeric_feature,int64,0,0,2,True,keep,Candidate feature after leakage and stability review.
+FLAG_DOCUMENT_9,numeric_feature,int64,0,0,2,True,keep,Candidate feature after leakage and stability review.
+FLAG_DOCUMENT_10,numeric_feature,int64,0,0,2,True,keep,Candidate feature after leakage and stability review.
+FLAG_DOCUMENT_11,numeric_feature,int64,0,0,2,True,keep,Candidate feature after leakage and stability review.
+FLAG_DOCUMENT_12,numeric_feature,int64,0,0,2,True,keep,Candidate feature after leakage and stability review.
+FLAG_DOCUMENT_13,numeric_feature,int64,0,0,2,True,keep,Candidate feature after leakage and stability review.
+FLAG_DOCUMENT_14,numeric_feature,int64,0,0,2,True,keep,Candidate feature after leakage and stability review.
+FLAG_DOCUMENT_15,numeric_feature,int64,0,0,2,True,keep,Candidate feature after leakage and stability review.
+FLAG_DOCUMENT_16,numeric_feature,int64,0,0,2,True,keep,Candidate feature after leakage and stability review.
+FLAG_DOCUMENT_17,numeric_feature,int64,0,0,2,True,keep,Candidate feature after leakage and stability review.
+FLAG_DOCUMENT_18,numeric_feature,int64,0,0,2,True,keep,Candidate feature after leakage and stability review.
+FLAG_DOCUMENT_19,numeric_feature,int64,0,0,2,True,keep,Candidate feature after leakage and stability review.
+FLAG_DOCUMENT_20,numeric_feature,int64,0,0,2,True,keep,Candidate feature after leakage and stability review.
+FLAG_DOCUMENT_21,numeric_feature,int64,0,0,2,True,keep,Candidate feature after leakage and stability review.
+AMT_REQ_CREDIT_BUREAU_HOUR,numeric_feature,float64,0,0,5,True,keep,Candidate feature after leakage and stability review.
+AMT_REQ_CREDIT_BUREAU_DAY,numeric_feature,float64,0,0,9,True,keep,Candidate feature after leakage and stability review.
+AMT_REQ_CREDIT_BUREAU_WEEK,numeric_feature,float64,0,0,9,True,keep,Candidate feature after leakage and stability review.
+AMT_REQ_CREDIT_BUREAU_MON,numeric_feature,float64,0,0,22,True,keep,Candidate feature after leakage and stability review.
+AMT_REQ_CREDIT_BUREAU_QRT,numeric_feature,float64,0,0,10,True,keep,Candidate feature after leakage and stability review.
+AMT_REQ_CREDIT_BUREAU_YEAR,numeric_feature,float64,0,0,22,True,keep,Candidate feature after leakage and stability review.
+DAYS_EMPLOYED_ANOMALY,numeric_feature,int64,0,0,2,True,keep,Candidate feature after leakage and stability review.
+credit_income_ratio,numeric_feature,float64,0,0,39468,True,keep,Candidate feature after leakage and stability review.
+annuity_income_ratio,numeric_feature,float64,0,0,72201,True,keep,Candidate feature after leakage and stability review.
+goods_credit_ratio,numeric_feature,float64,0,0,2742,True,keep,Candidate feature after leakage and stability review.
+employment_age_ratio,numeric_feature,float64,0,0,174969,True,keep,Candidate feature after leakage and stability review.
+split,split,str,0,0,1,False,exclude,Fixed split marker; not a model feature.
+age_years,derived_feature,float64,0,0,17379,True,keep,Stage 3 engineered business feature.
+employment_years,derived_feature,float64,0,0,11815,True,keep,Stage 3 engineered business feature.
+annuity_credit_ratio,derived_feature,float64,0,0,33479,True,keep,Stage 3 engineered business feature.
+income_per_person,derived_feature,float64,0,0,2390,True,keep,Stage 3 engineered business feature.
+credit_per_person,derived_feature,float64,0,0,11615,True,keep,Stage 3 engineered business feature.
+children_ratio,derived_feature,float64,0,0,14,True,keep,Stage 3 engineered business feature.
+ext_source_mean,derived_feature,float64,0,0,211207,True,keep,Stage 3 engineered business feature.
+ext_source_min,derived_feature,float64,0,0,81784,True,keep,Stage 3 engineered business feature.
+ext_source_max,derived_feature,float64,0,0,76100,True,keep,Stage 3 engineered business feature.
+ext_source_std,derived_feature,float64,0,0,211207,True,keep,Stage 3 engineered business feature.
+ext_source_count,feature,int64,0,0,1,False,exclude,Zero variance on train split.
+document_flag_sum,derived_feature,int64,0,0,4,True,keep,Stage 3 engineered business feature.
+contact_flag_sum,derived_feature,int64,0,0,6,True,keep,Stage 3 engineered business feature.
+bureau_request_total,derived_feature,float64,0,0,29,True,keep,Stage 3 engineered business feature.
+log_AMT_INCOME_TOTAL,derived_feature,float64,0,0,1969,True,keep,Stage 3 engineered business feature.
+log_AMT_CREDIT,derived_feature,float64,0,0,5092,True,keep,Stage 3 engineered business feature.
+log_AMT_ANNUITY,derived_feature,float64,0,0,12836,True,keep,Stage 3 engineered business feature.
+log_AMT_GOODS_PRICE,derived_feature,float64,0,0,834,True,keep,Stage 3 engineered business feature.
