@@ -1,0 +1,3 @@
+model,requested_device,actual_device,status,fallback_from,fallback_reason
+xgboost_cuda_numeric,cuda,cuda,success,,
+lightgbm_gpu_numeric,gpu,gpu,success,,

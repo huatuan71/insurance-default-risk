@@ -1,0 +1,126 @@
+column,dtype,strategy,fill_value,missing_before,train_missing_before,rare_categories_grouped,rare_rows_grouped,reason
+NAME_CONTRACT_TYPE,str,fill_missing_and_group_train_rare_categories,__MISSING__,0,0,0,0,Categorical missing values use a stable sentinel; rare levels are grouped using training-split counts.
+CODE_GENDER,str,fill_missing_and_group_train_rare_categories,__MISSING__,4,2,0,0,Categorical missing values use a stable sentinel; rare levels are grouped using training-split counts.
+FLAG_OWN_CAR,str,fill_missing_and_group_train_rare_categories,__MISSING__,0,0,0,0,Categorical missing values use a stable sentinel; rare levels are grouped using training-split counts.
+FLAG_OWN_REALTY,str,fill_missing_and_group_train_rare_categories,__MISSING__,0,0,0,0,Categorical missing values use a stable sentinel; rare levels are grouped using training-split counts.
+CNT_CHILDREN,int64,train_median,0.0,0,0,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+AMT_INCOME_TOTAL,float64,train_median,148500.0,0,0,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+AMT_CREDIT,float64,train_median,513000.0,0,0,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+AMT_ANNUITY,float64,train_median,24898.5,12,8,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+AMT_GOODS_PRICE,float64,train_median,450000.0,278,193,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+NAME_TYPE_SUITE,str,fill_missing_and_group_train_rare_categories,__MISSING__,1292,899,1,271,Categorical missing values use a stable sentinel; rare levels are grouped using training-split counts.
+NAME_INCOME_TYPE,str,fill_missing_and_group_train_rare_categories,__MISSING__,0,0,4,55,Categorical missing values use a stable sentinel; rare levels are grouped using training-split counts.
+NAME_EDUCATION_TYPE,str,fill_missing_and_group_train_rare_categories,__MISSING__,0,0,1,164,Categorical missing values use a stable sentinel; rare levels are grouped using training-split counts.
+NAME_FAMILY_STATUS,str,fill_missing_and_group_train_rare_categories,__MISSING__,0,0,1,2,Categorical missing values use a stable sentinel; rare levels are grouped using training-split counts.
+NAME_HOUSING_TYPE,str,fill_missing_and_group_train_rare_categories,__MISSING__,0,0,0,0,Categorical missing values use a stable sentinel; rare levels are grouped using training-split counts.
+REGION_POPULATION_RELATIVE,float64,train_median,0.01885,0,0,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+DAYS_BIRTH,int64,train_median,-15762.0,0,0,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+DAYS_EMPLOYED,float64,train_median,-1652.0,55374,38903,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+DAYS_REGISTRATION,float64,train_median,-4506.0,0,0,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+DAYS_ID_PUBLISH,int64,train_median,-3254.0,0,0,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+OWN_CAR_AGE,float64,train_median,9.0,202929,142031,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+FLAG_MOBIL,int64,train_median,1.0,0,0,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+FLAG_EMP_PHONE,int64,train_median,1.0,0,0,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+FLAG_WORK_PHONE,int64,train_median,0.0,0,0,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+FLAG_CONT_MOBILE,int64,train_median,1.0,0,0,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+FLAG_PHONE,int64,train_median,0.0,0,0,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+FLAG_EMAIL,int64,train_median,0.0,0,0,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+OCCUPATION_TYPE,str,fill_missing_and_group_train_rare_categories,__MISSING__,96391,67664,0,0,Categorical missing values use a stable sentinel; rare levels are grouped using training-split counts.
+CNT_FAM_MEMBERS,float64,train_median,2.0,2,2,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+REGION_RATING_CLIENT,int64,train_median,2.0,0,0,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+REGION_RATING_CLIENT_W_CITY,int64,train_median,2.0,0,0,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+WEEKDAY_APPR_PROCESS_START,str,fill_missing_and_group_train_rare_categories,__MISSING__,0,0,0,0,Categorical missing values use a stable sentinel; rare levels are grouped using training-split counts.
+HOUR_APPR_PROCESS_START,int64,train_median,12.0,0,0,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+REG_REGION_NOT_LIVE_REGION,int64,train_median,0.0,0,0,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+REG_REGION_NOT_WORK_REGION,int64,train_median,0.0,0,0,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+LIVE_REGION_NOT_WORK_REGION,int64,train_median,0.0,0,0,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+REG_CITY_NOT_LIVE_CITY,int64,train_median,0.0,0,0,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+REG_CITY_NOT_WORK_CITY,int64,train_median,0.0,0,0,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+LIVE_CITY_NOT_WORK_CITY,int64,train_median,0.0,0,0,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+ORGANIZATION_TYPE,str,fill_missing_and_group_train_rare_categories,__MISSING__,0,0,10,1276,Categorical missing values use a stable sentinel; rare levels are grouped using training-split counts.
+EXT_SOURCE_1,float64,train_median,0.5070209301981822,173378,121098,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+EXT_SOURCE_2,float64,train_median,0.5664448208062506,660,469,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+EXT_SOURCE_3,float64,train_median,0.5370699579791587,60965,42702,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+APARTMENTS_AVG,float64,train_median,0.0871,156061,109183,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+BASEMENTAREA_AVG,float64,train_median,0.0762,179943,125860,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+YEARS_BEGINEXPLUATATION_AVG,float64,train_median,0.9816,150007,104889,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+YEARS_BUILD_AVG,float64,train_median,0.7552,204488,143158,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+COMMONAREA_AVG,float64,train_median,0.0208,214865,150414,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+ELEVATORS_AVG,float64,train_median,0.0,163891,114737,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+ENTRANCES_AVG,float64,train_median,0.1379,154828,108308,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+FLOORSMAX_AVG,float64,train_median,0.1667,153020,107051,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+FLOORSMIN_AVG,float64,train_median,0.2083,208642,146106,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+LANDAREA_AVG,float64,train_median,0.0484,182590,127679,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+LIVINGAPARTMENTS_AVG,float64,train_median,0.0752,210199,147148,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+LIVINGAREA_AVG,float64,train_median,0.0743,154350,107924,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+NONLIVINGAPARTMENTS_AVG,float64,train_median,0.0,213514,149530,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+NONLIVINGAREA_AVG,float64,train_median,0.0036,169682,118693,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+APARTMENTS_MODE,float64,train_median,0.084,156061,109183,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+BASEMENTAREA_MODE,float64,train_median,0.0745,179943,125860,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+YEARS_BEGINEXPLUATATION_MODE,float64,train_median,0.9816,150007,104889,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+YEARS_BUILD_MODE,float64,train_median,0.7648,204488,143158,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+COMMONAREA_MODE,float64,train_median,0.0189,214865,150414,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+ELEVATORS_MODE,float64,train_median,0.0,163891,114737,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+ENTRANCES_MODE,float64,train_median,0.1379,154828,108308,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+FLOORSMAX_MODE,float64,train_median,0.1667,153020,107051,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+FLOORSMIN_MODE,float64,train_median,0.2083,208642,146106,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+LANDAREA_MODE,float64,train_median,0.0461,182590,127679,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+LIVINGAPARTMENTS_MODE,float64,train_median,0.0762,210199,147148,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+LIVINGAREA_MODE,float64,train_median,0.0731,154350,107924,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+NONLIVINGAPARTMENTS_MODE,float64,train_median,0.0,213514,149530,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+NONLIVINGAREA_MODE,float64,train_median,0.0011,169682,118693,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+APARTMENTS_MEDI,float64,train_median,0.0864,156061,109183,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+BASEMENTAREA_MEDI,float64,train_median,0.0757,179943,125860,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+YEARS_BEGINEXPLUATATION_MEDI,float64,train_median,0.9816,150007,104889,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+YEARS_BUILD_MEDI,float64,train_median,0.7585,204488,143158,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+COMMONAREA_MEDI,float64,train_median,0.0206,214865,150414,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+ELEVATORS_MEDI,float64,train_median,0.0,163891,114737,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+ENTRANCES_MEDI,float64,train_median,0.1379,154828,108308,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+FLOORSMAX_MEDI,float64,train_median,0.1667,153020,107051,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+FLOORSMIN_MEDI,float64,train_median,0.2083,208642,146106,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+LANDAREA_MEDI,float64,train_median,0.0488,182590,127679,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+LIVINGAPARTMENTS_MEDI,float64,train_median,0.0761,210199,147148,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+LIVINGAREA_MEDI,float64,train_median,0.0747,154350,107924,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+NONLIVINGAPARTMENTS_MEDI,float64,train_median,0.0,213514,149530,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+NONLIVINGAREA_MEDI,float64,train_median,0.0031,169682,118693,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+FONDKAPREMONT_MODE,str,fill_missing_and_group_train_rare_categories,__MISSING__,210295,147256,0,0,Categorical missing values use a stable sentinel; rare levels are grouped using training-split counts.
+HOUSETYPE_MODE,str,fill_missing_and_group_train_rare_categories,__MISSING__,154297,107943,0,0,Categorical missing values use a stable sentinel; rare levels are grouped using training-split counts.
+TOTALAREA_MODE,float64,train_median,0.0687,148431,103783,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+WALLSMATERIAL_MODE,str,fill_missing_and_group_train_rare_categories,__MISSING__,156341,109361,0,0,Categorical missing values use a stable sentinel; rare levels are grouped using training-split counts.
+EMERGENCYSTATE_MODE,str,fill_missing_and_group_train_rare_categories,__MISSING__,145755,101909,0,0,Categorical missing values use a stable sentinel; rare levels are grouped using training-split counts.
+OBS_30_CNT_SOCIAL_CIRCLE,float64,train_median,0.0,1021,717,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+DEF_30_CNT_SOCIAL_CIRCLE,float64,train_median,0.0,1021,717,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+OBS_60_CNT_SOCIAL_CIRCLE,float64,train_median,0.0,1021,717,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+DEF_60_CNT_SOCIAL_CIRCLE,float64,train_median,0.0,1021,717,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+DAYS_LAST_PHONE_CHANGE,float64,train_median,-760.0,1,1,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+FLAG_DOCUMENT_2,int64,train_median,0.0,0,0,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+FLAG_DOCUMENT_3,int64,train_median,1.0,0,0,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+FLAG_DOCUMENT_4,int64,train_median,0.0,0,0,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+FLAG_DOCUMENT_5,int64,train_median,0.0,0,0,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+FLAG_DOCUMENT_6,int64,train_median,0.0,0,0,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+FLAG_DOCUMENT_7,int64,train_median,0.0,0,0,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+FLAG_DOCUMENT_8,int64,train_median,0.0,0,0,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+FLAG_DOCUMENT_9,int64,train_median,0.0,0,0,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+FLAG_DOCUMENT_10,int64,train_median,0.0,0,0,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+FLAG_DOCUMENT_11,int64,train_median,0.0,0,0,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+FLAG_DOCUMENT_12,int64,train_median,0.0,0,0,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+FLAG_DOCUMENT_13,int64,train_median,0.0,0,0,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+FLAG_DOCUMENT_14,int64,train_median,0.0,0,0,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+FLAG_DOCUMENT_15,int64,train_median,0.0,0,0,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+FLAG_DOCUMENT_16,int64,train_median,0.0,0,0,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+FLAG_DOCUMENT_17,int64,train_median,0.0,0,0,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+FLAG_DOCUMENT_18,int64,train_median,0.0,0,0,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+FLAG_DOCUMENT_19,int64,train_median,0.0,0,0,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+FLAG_DOCUMENT_20,int64,train_median,0.0,0,0,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+FLAG_DOCUMENT_21,int64,train_median,0.0,0,0,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+AMT_REQ_CREDIT_BUREAU_HOUR,float64,train_median,0.0,41519,29203,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+AMT_REQ_CREDIT_BUREAU_DAY,float64,train_median,0.0,41519,29203,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+AMT_REQ_CREDIT_BUREAU_WEEK,float64,train_median,0.0,41519,29203,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+AMT_REQ_CREDIT_BUREAU_MON,float64,train_median,0.0,41519,29203,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+AMT_REQ_CREDIT_BUREAU_QRT,float64,train_median,0.0,41519,29203,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+AMT_REQ_CREDIT_BUREAU_YEAR,float64,train_median,1.0,41519,29203,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+DAYS_EMPLOYED_ANOMALY,int8,train_median,0.0,0,0,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+credit_income_ratio,float64,train_median,3.252423076923077,0,0,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+annuity_income_ratio,float64,train_median,0.1626875,12,8,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+goods_credit_ratio,float64,train_median,0.8938148015731141,278,193,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.
+employment_age_ratio,float64,train_median,0.11895031545289583,55374,38903,0,0,Numeric missing values are filled with the training-split median to avoid validation/test leakage.

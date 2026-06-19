@@ -1,0 +1,2 @@
+dataset,source_path,rows,columns,target,positive_count,positive_rate,duplicate_rows
+taiwan_credit,E:\作业2\机器学习实践\insurance\data\raw\taiwan\default of credit card clients.xls,30000,29,default_payment_next_month,6636,0.2212,0

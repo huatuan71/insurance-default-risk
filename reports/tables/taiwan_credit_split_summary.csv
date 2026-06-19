@@ -1,0 +1,7 @@
+split,default_payment_next_month,count
+test,0,3505
+test,1,996
+train,0,16354
+train,1,4645
+valid,0,3505
+valid,1,995

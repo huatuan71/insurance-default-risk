@@ -1,0 +1,2 @@
+dataset,source_path,rows,columns,target,positive_count,positive_rate,duplicate_rows
+home_credit,E:\作业2\机器学习实践\insurance\data\raw\home_credit\application_train.csv,307511,127,TARGET,24825,0.08072881945686496,0

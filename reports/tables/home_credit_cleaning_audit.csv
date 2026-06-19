@@ -1,0 +1,10 @@
+rule_id,column,affected_rows,action,reason
+fixed_stratified_split,split,307511,create train/valid/test split with seed 42 and target stratification,A fixed split keeps all downstream model comparisons fair and reproducible.
+home_credit_days_employed_sentinel,DAYS_EMPLOYED,55374,replace raw 365243 sentinel with NaN and add DAYS_EMPLOYED_ANOMALY,"365243 is Home Credit's special missing-employment marker, not a real employment duration."
+home_credit_code_gender_xna,CODE_GENDER,4,replace XNA with missing before categorical imputation,XNA is an invalid gender category and should not be treated as a normal level.
+amt_income_total_non_positive,AMT_INCOME_TOTAL,0,replace non-positive values with NaN before ratio features and imputation,These amount fields are used as denominators or core financial measures.
+amt_credit_non_positive,AMT_CREDIT,0,replace non-positive values with NaN before ratio features and imputation,These amount fields are used as denominators or core financial measures.
+amt_annuity_negative,AMT_ANNUITY,0,replace negative values with NaN before imputation,Negative loan annuity or goods price would be invalid for this application table.
+amt_goods_price_negative,AMT_GOODS_PRICE,0,replace negative values with NaN before imputation,Negative loan annuity or goods price would be invalid for this application table.
+numeric_missing_values,numeric feature columns,,fill with training-split median; values recorded in missing imputation policy table,The imputation statistic must be learned from train only to avoid validation/test leakage.
+categorical_missing_and_rare_values,categorical feature columns,,fill missing with __MISSING__; group train-rare levels as __RARE__,Stable category handling prevents sparse one-off levels from dominating later encoders.

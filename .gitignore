@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.codex_tmp_media_preview/
+
+reports/.mplconfig/
+reports/.gpu_cache/
+
+data/raw/home_credit/
+data/raw/kaggle_config/
+data/raw/**/*.zip
+data/raw/**/*.xls
+data/raw/**/*.xlsx
+data/processed/*.csv
+
+models/*.joblib
