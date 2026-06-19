@@ -1,0 +1,4 @@
+cost_scenario,cost_ratio,model,model_family,strategy,selected_threshold,valid_total_cost,test_total_cost,test_cost_at_0_5,test_cost_saving_vs_0_5,test_tp_gain_vs_0_5,test_fp_gain_vs_0_5,test_fn_reduction_vs_0_5,test_precision,test_recall,test_f1
+fn5_fp1,5:1,stage5_lightgbm_smote_gpu,lightgbm,smote,0.18,15172,15684,18298,2614,1241,3591,1241,0.26472945891783567,0.3547261009667025,0.30319026853339454
+fn10_fp1,10:1,stage5_lightgbm_smote_gpu,lightgbm,smote,0.1,24057,23976,36518,12542,2251,9968,2251,0.18833319867496162,0.6259398496240601,0.28954723309111235
+fn20_fp1,20:1,stage5_lightgbm_raw_gpu,lightgbm,raw,0.05,32342,33237,72725,39488,2990,20312,2990,0.13126623791473233,0.8276047261009667,0.22659265522185054
