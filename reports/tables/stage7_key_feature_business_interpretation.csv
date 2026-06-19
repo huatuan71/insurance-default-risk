@@ -1,0 +1,57 @@
+model,encoded_feature,original_feature,encoded_category,feature_family,business_meaning,interpretation_guidance
+stage5_lightgbm_raw_gpu,DAYS_BIRTH,DAYS_BIRTH,,age_and_tenure,申请人年龄，通常通过年龄阶段反映生命周期和收入稳定性。,SHAP 为正表示该特征在该样本上推高违约风险分数；SHAP 为负表示降低风险分数，不能解释为因果关系。
+stage5_lightgbm_raw_gpu,DAYS_EMPLOYED,DAYS_EMPLOYED,,age_and_tenure,当前工作年限，反映就业稳定性。,SHAP 为正表示该特征在该样本上推高违约风险分数；SHAP 为负表示降低风险分数，不能解释为因果关系。
+stage5_lightgbm_raw_gpu,DAYS_ID_PUBLISH,DAYS_ID_PUBLISH,,age_and_tenure,身份证件签发距申请日的时间。,SHAP 为正表示该特征在该样本上推高违约风险分数；SHAP 为负表示降低风险分数，不能解释为因果关系。
+stage5_lightgbm_raw_gpu,DAYS_LAST_PHONE_CHANGE,DAYS_LAST_PHONE_CHANGE,,age_and_tenure,最近一次更换电话号码距申请日的时间，可能反映联系方式稳定性。,SHAP 为正表示该特征在该样本上推高违约风险分数；SHAP 为负表示降低风险分数，不能解释为因果关系。
+stage5_lightgbm_raw_gpu,DAYS_REGISTRATION,DAYS_REGISTRATION,,age_and_tenure,最近一次变更登记信息距申请日的时间，可能反映居住或身份信息稳定性。,SHAP 为正表示该特征在该样本上推高违约风险分数；SHAP 为负表示降低风险分数，不能解释为因果关系。
+stage5_lightgbm_raw_gpu,age_years,age_years,,age_and_tenure,申请人年龄（年）。,SHAP 为正表示该特征在该样本上推高违约风险分数；SHAP 为负表示降低风险分数，不能解释为因果关系。
+stage5_lightgbm_raw_gpu,AMT_ANNUITY,AMT_ANNUITY,,amount_and_ratio,贷款年金/分期还款压力。,SHAP 为正表示该特征在该样本上推高违约风险分数；SHAP 为负表示降低风险分数，不能解释为因果关系。
+stage5_lightgbm_raw_gpu,annuity_credit_ratio,annuity_credit_ratio,,amount_and_ratio,分期还款额相对授信金额的压力。,SHAP 为正表示该特征在该样本上推高违约风险分数；SHAP 为负表示降低风险分数，不能解释为因果关系。
+stage5_lightgbm_raw_gpu,annuity_income_ratio,annuity_income_ratio,,amount_and_ratio,分期还款额相对收入的压力。,SHAP 为正表示该特征在该样本上推高违约风险分数；SHAP 为负表示降低风险分数，不能解释为因果关系。
+stage5_lightgbm_raw_gpu,credit_income_ratio,credit_income_ratio,,amount_and_ratio,授信金额相对收入的杠杆水平。,SHAP 为正表示该特征在该样本上推高违约风险分数；SHAP 为负表示降低风险分数，不能解释为因果关系。
+stage5_lightgbm_raw_gpu,credit_per_person,credit_per_person,,amount_and_ratio,家庭人均授信金额。,SHAP 为正表示该特征在该样本上推高违约风险分数；SHAP 为负表示降低风险分数，不能解释为因果关系。
+stage5_lightgbm_raw_gpu,employment_age_ratio,employment_age_ratio,,amount_and_ratio,"Derived feature: employment days divided by birth days, both relative to application date.",SHAP 为正表示该特征在该样本上推高违约风险分数；SHAP 为负表示降低风险分数，不能解释为因果关系。
+stage5_lightgbm_raw_gpu,goods_credit_ratio,goods_credit_ratio,,amount_and_ratio,商品价格相对授信金额的比例。,SHAP 为正表示该特征在该样本上推高违约风险分数；SHAP 为负表示降低风险分数，不能解释为因果关系。
+stage5_lightgbm_raw_gpu,CODE_GENDER_F,CODE_GENDER,F,categorical_profile,申请人性别。,SHAP 为正表示该特征在该样本上推高违约风险分数；SHAP 为负表示降低风险分数，不能解释为因果关系。
+stage5_lightgbm_raw_gpu,CODE_GENDER_M,CODE_GENDER,M,categorical_profile,申请人性别。,SHAP 为正表示该特征在该样本上推高违约风险分数；SHAP 为负表示降低风险分数，不能解释为因果关系。
+stage5_lightgbm_raw_gpu,NAME_EDUCATION_TYPE_Higher education,NAME_EDUCATION_TYPE,Higher education,categorical_profile,教育程度。,SHAP 为正表示该特征在该样本上推高违约风险分数；SHAP 为负表示降低风险分数，不能解释为因果关系。
+stage5_lightgbm_raw_gpu,NAME_FAMILY_STATUS_Married,NAME_FAMILY_STATUS,Married,categorical_profile,婚姻/家庭状态。,SHAP 为正表示该特征在该样本上推高违约风险分数；SHAP 为负表示降低风险分数，不能解释为因果关系。
+stage5_lightgbm_raw_gpu,EXT_SOURCE_1,EXT_SOURCE_1,,external_score,外部信用评分相关变量，通常反映第三方或外部数据源对申请人风险质量的综合判断。,SHAP 为正表示该特征在该样本上推高违约风险分数；SHAP 为负表示降低风险分数，不能解释为因果关系。
+stage5_lightgbm_raw_gpu,EXT_SOURCE_2,EXT_SOURCE_2,,external_score,外部信用评分相关变量，通常反映第三方或外部数据源对申请人风险质量的综合判断。,SHAP 为正表示该特征在该样本上推高违约风险分数；SHAP 为负表示降低风险分数，不能解释为因果关系。
+stage5_lightgbm_raw_gpu,EXT_SOURCE_3,EXT_SOURCE_3,,external_score,外部信用评分相关变量，通常反映第三方或外部数据源对申请人风险质量的综合判断。,SHAP 为正表示该特征在该样本上推高违约风险分数；SHAP 为负表示降低风险分数，不能解释为因果关系。
+stage5_lightgbm_raw_gpu,ext_source_max,ext_source_max,,external_score,三个外部信用评分中的最高值，用来反映申请人最好的一侧外部信用信号。,SHAP 为正表示该特征在该样本上推高违约风险分数；SHAP 为负表示降低风险分数，不能解释为因果关系。
+stage5_lightgbm_raw_gpu,ext_source_mean,ext_source_mean,,external_score,三个外部信用评分的平均水平，用来概括申请人的综合外部信用质量。,SHAP 为正表示该特征在该样本上推高违约风险分数；SHAP 为负表示降低风险分数，不能解释为因果关系。
+stage5_lightgbm_raw_gpu,ext_source_min,ext_source_min,,external_score,三个外部信用评分中的最低值，用来捕捉外部评分中的短板信号。,SHAP 为正表示该特征在该样本上推高违约风险分数；SHAP 为负表示降低风险分数，不能解释为因果关系。
+stage5_lightgbm_raw_gpu,ext_source_std,ext_source_std,,external_score,三个外部信用评分的离散程度，用来衡量外部评分是否一致。,SHAP 为正表示该特征在该样本上推高违约风险分数；SHAP 为负表示降低风险分数，不能解释为因果关系。
+stage5_lightgbm_raw_gpu,FLAG_OWN_CAR_N,FLAG_OWN_CAR,N,flags_and_contacts,是否拥有车辆，可能反映资产状况。,SHAP 为正表示该特征在该样本上推高违约风险分数；SHAP 为负表示降低风险分数，不能解释为因果关系。
+stage5_lightgbm_raw_gpu,FLAG_WORK_PHONE,FLAG_WORK_PHONE,,flags_and_contacts,是否提供工作电话，反映可联系性和工作信息完整度。,SHAP 为正表示该特征在该样本上推高违约风险分数；SHAP 为负表示降低风险分数，不能解释为因果关系。
+stage5_lightgbm_raw_gpu,REGION_POPULATION_RELATIVE,REGION_POPULATION_RELATIVE,,other,申请人所在地区的人口相对密度。,SHAP 为正表示该特征在该样本上推高违约风险分数；SHAP 为负表示降低风险分数，不能解释为因果关系。
+stage5_lightgbm_raw_gpu,log_AMT_ANNUITY,log_AMT_ANNUITY,,other,分期还款金额的对数变换，用来降低极端年金值对模型的影响。,SHAP 为正表示该特征在该样本上推高违约风险分数；SHAP 为负表示降低风险分数，不能解释为因果关系。
+stage5_lightgbm_smote_gpu,AMT_REQ_CREDIT_BUREAU_YEAR,AMT_REQ_CREDIT_BUREAU_YEAR,,amount_and_ratio,申请前一年内的征信查询次数，反映中期信贷申请活跃度。,SHAP 为正表示该特征在该样本上推高违约风险分数；SHAP 为负表示降低风险分数，不能解释为因果关系。
+stage5_lightgbm_smote_gpu,annuity_credit_ratio,annuity_credit_ratio,,amount_and_ratio,分期还款额相对授信金额的压力。,SHAP 为正表示该特征在该样本上推高违约风险分数；SHAP 为负表示降低风险分数，不能解释为因果关系。
+stage5_lightgbm_smote_gpu,CODE_GENDER_F,CODE_GENDER,F,categorical_profile,申请人性别。,SHAP 为正表示该特征在该样本上推高违约风险分数；SHAP 为负表示降低风险分数，不能解释为因果关系。
+stage5_lightgbm_smote_gpu,CODE_GENDER_M,CODE_GENDER,M,categorical_profile,申请人性别。,SHAP 为正表示该特征在该样本上推高违约风险分数；SHAP 为负表示降低风险分数，不能解释为因果关系。
+stage5_lightgbm_smote_gpu,NAME_EDUCATION_TYPE_Higher education,NAME_EDUCATION_TYPE,Higher education,categorical_profile,教育程度。,SHAP 为正表示该特征在该样本上推高违约风险分数；SHAP 为负表示降低风险分数，不能解释为因果关系。
+stage5_lightgbm_smote_gpu,NAME_EDUCATION_TYPE_Secondary / secondary special,NAME_EDUCATION_TYPE,Secondary / secondary special,categorical_profile,教育程度。,SHAP 为正表示该特征在该样本上推高违约风险分数；SHAP 为负表示降低风险分数，不能解释为因果关系。
+stage5_lightgbm_smote_gpu,NAME_INCOME_TYPE_Working,NAME_INCOME_TYPE,Working,categorical_profile,收入来源类型。,SHAP 为正表示该特征在该样本上推高违约风险分数；SHAP 为负表示降低风险分数，不能解释为因果关系。
+stage5_lightgbm_smote_gpu,ORGANIZATION_TYPE_Business Entity Type 3,ORGANIZATION_TYPE,Business Entity Type 3,categorical_profile,工作单位/组织类型。,SHAP 为正表示该特征在该样本上推高违约风险分数；SHAP 为负表示降低风险分数，不能解释为因果关系。
+stage5_lightgbm_smote_gpu,ORGANIZATION_TYPE_Self-employed,ORGANIZATION_TYPE,Self-employed,categorical_profile,工作单位/组织类型。,SHAP 为正表示该特征在该样本上推高违约风险分数；SHAP 为负表示降低风险分数，不能解释为因果关系。
+stage5_lightgbm_smote_gpu,EXT_SOURCE_3,EXT_SOURCE_3,,external_score,外部信用评分相关变量，通常反映第三方或外部数据源对申请人风险质量的综合判断。,SHAP 为正表示该特征在该样本上推高违约风险分数；SHAP 为负表示降低风险分数，不能解释为因果关系。
+stage5_lightgbm_smote_gpu,ext_source_max,ext_source_max,,external_score,三个外部信用评分中的最高值，用来反映申请人最好的一侧外部信用信号。,SHAP 为正表示该特征在该样本上推高违约风险分数；SHAP 为负表示降低风险分数，不能解释为因果关系。
+stage5_lightgbm_smote_gpu,ext_source_mean,ext_source_mean,,external_score,三个外部信用评分的平均水平，用来概括申请人的综合外部信用质量。,SHAP 为正表示该特征在该样本上推高违约风险分数；SHAP 为负表示降低风险分数，不能解释为因果关系。
+stage5_lightgbm_smote_gpu,ext_source_min,ext_source_min,,external_score,三个外部信用评分中的最低值，用来捕捉外部评分中的短板信号。,SHAP 为正表示该特征在该样本上推高违约风险分数；SHAP 为负表示降低风险分数，不能解释为因果关系。
+stage5_lightgbm_smote_gpu,FLAG_DOCUMENT_3,FLAG_DOCUMENT_3,,flags_and_contacts,申请材料中的文件提交标记，反映材料完整性。,SHAP 为正表示该特征在该样本上推高违约风险分数；SHAP 为负表示降低风险分数，不能解释为因果关系。
+stage5_lightgbm_smote_gpu,FLAG_OWN_CAR_N,FLAG_OWN_CAR,N,flags_and_contacts,是否拥有车辆，可能反映资产状况。,SHAP 为正表示该特征在该样本上推高违约风险分数；SHAP 为负表示降低风险分数，不能解释为因果关系。
+stage5_lightgbm_smote_gpu,FLAG_OWN_CAR_Y,FLAG_OWN_CAR,Y,flags_and_contacts,是否拥有车辆，可能反映资产状况。,SHAP 为正表示该特征在该样本上推高违约风险分数；SHAP 为负表示降低风险分数，不能解释为因果关系。
+stage5_lightgbm_smote_gpu,FLAG_OWN_REALTY_N,FLAG_OWN_REALTY,N,flags_and_contacts,布尔标记类字段，反映申请材料、联系方式或资产信息是否存在。,SHAP 为正表示该特征在该样本上推高违约风险分数；SHAP 为负表示降低风险分数，不能解释为因果关系。
+stage5_lightgbm_smote_gpu,FLAG_PHONE,FLAG_PHONE,,flags_and_contacts,是否提供联系电话，反映联系信息完整度。,SHAP 为正表示该特征在该样本上推高违约风险分数；SHAP 为负表示降低风险分数，不能解释为因果关系。
+stage5_lightgbm_smote_gpu,FLAG_WORK_PHONE,FLAG_WORK_PHONE,,flags_and_contacts,是否提供工作电话，反映可联系性和工作信息完整度。,SHAP 为正表示该特征在该样本上推高违约风险分数；SHAP 为负表示降低风险分数，不能解释为因果关系。
+stage5_lightgbm_smote_gpu,DEF_30_CNT_SOCIAL_CIRCLE,DEF_30_CNT_SOCIAL_CIRCLE,,other,申请人社交圈中出现 30 天以上逾期的人数，反映周边信用环境。,SHAP 为正表示该特征在该样本上推高违约风险分数；SHAP 为负表示降低风险分数，不能解释为因果关系。
+stage5_lightgbm_smote_gpu,EMERGENCYSTATE_MODE_No,EMERGENCYSTATE_MODE,No,other,居住房屋所在区域的紧急状态标记。,SHAP 为正表示该特征在该样本上推高违约风险分数；SHAP 为负表示降低风险分数，不能解释为因果关系。
+stage5_lightgbm_smote_gpu,EMERGENCYSTATE_MODE___MISSING__,EMERGENCYSTATE_MODE,__MISSING__,other,居住房屋所在区域的紧急状态标记。,SHAP 为正表示该特征在该样本上推高违约风险分数；SHAP 为负表示降低风险分数，不能解释为因果关系。
+stage5_lightgbm_smote_gpu,FONDKAPREMONT_MODE___MISSING__,FONDKAPREMONT_MODE,__MISSING__,other,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor",SHAP 为正表示该特征在该样本上推高违约风险分数；SHAP 为负表示降低风险分数，不能解释为因果关系。
+stage5_lightgbm_smote_gpu,HOUSETYPE_MODE_block of flats,HOUSETYPE_MODE,block of flats,other,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor",SHAP 为正表示该特征在该样本上推高违约风险分数；SHAP 为负表示降低风险分数，不能解释为因果关系。
+stage5_lightgbm_smote_gpu,OBS_30_CNT_SOCIAL_CIRCLE,OBS_30_CNT_SOCIAL_CIRCLE,,other,How many observation of client's social surroundings with observable 30 DPD (days past due) default,SHAP 为正表示该特征在该样本上推高违约风险分数；SHAP 为负表示降低风险分数，不能解释为因果关系。
+stage5_lightgbm_smote_gpu,REGION_RATING_CLIENT_W_CITY,REGION_RATING_CLIENT_W_CITY,,other,结合城市后的客户所在区域评级。,SHAP 为正表示该特征在该样本上推高违约风险分数；SHAP 为负表示降低风险分数，不能解释为因果关系。
+stage5_lightgbm_smote_gpu,REG_CITY_NOT_WORK_CITY,REG_CITY_NOT_WORK_CITY,,other,"Flag if client's permanent address does not match work address (1=different, 0=same, at city level)",SHAP 为正表示该特征在该样本上推高违约风险分数；SHAP 为负表示降低风险分数，不能解释为因果关系。
+stage5_lightgbm_smote_gpu,WALLSMATERIAL_MODE___MISSING__,WALLSMATERIAL_MODE,__MISSING__,other,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor",SHAP 为正表示该特征在该样本上推高违约风险分数；SHAP 为负表示降低风险分数，不能解释为因果关系。
