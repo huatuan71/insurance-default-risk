@@ -1,0 +1,4 @@
+split,rows,numeric_feature_count,categorical_feature_count,raw_feature_count,target_column,id_columns
+test,46127,126,16,142,TARGET,SK_ID_CURR
+train,215257,126,16,142,TARGET,SK_ID_CURR
+valid,46127,126,16,142,TARGET,SK_ID_CURR

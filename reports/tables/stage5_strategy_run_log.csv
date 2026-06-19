@@ -1,0 +1,11 @@
+model,model_family,strategy,requested_device,actual_device,status,fallback_from,fallback_reason,fit_rows_before_sampling,positive_count_before_sampling,negative_count_before_sampling,scale_pos_weight,sampler
+stage5_lightgbm_raw_gpu,lightgbm,raw,gpu,gpu,success,,,215257,17377,197880,,
+stage5_lightgbm_weighted_gpu,lightgbm,weighted,gpu,gpu,success,,,215257,17377,197880,11.38746619094205,
+stage5_lightgbm_random_under_sample_gpu,lightgbm,random_under_sample,gpu,gpu,success,,,215257,17377,197880,,RandomUnderSampler
+stage5_lightgbm_smote_gpu,lightgbm,smote,gpu,gpu,success,,,215257,17377,197880,,SMOTE
+stage5_lightgbm_threshold_moving_gpu,lightgbm,threshold_moving,gpu,gpu,derived_from_raw,,,215257,17377,197880,,
+stage5_xgboost_raw_cuda,xgboost,raw,cuda,cuda,success,,,215257,17377,197880,,
+stage5_xgboost_weighted_cuda,xgboost,weighted,cuda,cuda,success,,,215257,17377,197880,11.38746619094205,
+stage5_xgboost_random_under_sample_cuda,xgboost,random_under_sample,cuda,cuda,success,,,215257,17377,197880,,RandomUnderSampler
+stage5_xgboost_smote_cuda,xgboost,smote,cuda,cuda,success,,,215257,17377,197880,,SMOTE
+stage5_xgboost_threshold_moving_cuda,xgboost,threshold_moving,cuda,cuda,derived_from_raw,,,215257,17377,197880,,
