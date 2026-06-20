@@ -136,6 +136,8 @@
 | `stage3_feature_status.md` 至 `stage8_extension_model_status.md` | 各阶段验收结论、输入、主要结果、限制和复现命令；每次汇报前先核对这里。 |
 | `models/*.joblib`、`models/*.pt` | 本地训练模型，用于 Stage 6-8 的复用与演示；体积较大且可再生，不提交 Git。 |
 | `src/run_week1_2.py`、`run_stage3_features.py`、`run_stage4_baselines.py`、`run_stage5_imbalance.py`、`run_stage6_business_thresholds.py`、`run_stage6_probability_calibration.py`、`run_stage7_explainability.py`、`run_stage8_extension_models.py` | 从数据准备到扩展实验的顺序化复现入口。 |
+| `src/inference.py` | 本地应用共用的 Home Credit 输入校验、特征工程、Pipeline 评分、成本阈值读取与单样本 SHAP 服务。 |
+| `app/streamlit_app.py`、`app/README.md` | 课堂演示决策台及启动说明；将风险分数、业务阈值、批量 CSV 评分、实验图表和 SHAP 解释整合为可交互页面。 |
 
 ## 最终汇报的最小图表组合
 

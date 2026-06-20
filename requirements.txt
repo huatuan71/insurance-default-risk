@@ -11,3 +11,4 @@ imbalanced-learn>=0.12
 shap>=0.45
 kaggle>=1.6
 torch>=2.3
+streamlit>=1.36
